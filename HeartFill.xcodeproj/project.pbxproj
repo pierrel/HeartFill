@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2C0F4941536A7C3009FF614 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4931536A7C3009FF614 /* UIKit.framework */; };
+		A2C0F4961536A7C3009FF614 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4951536A7C3009FF614 /* Foundation.framework */; };
+		A2C0F4981536A7C3009FF614 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4971536A7C3009FF614 /* CoreGraphics.framework */; };
+		A2C0F49E1536A7C3009FF614 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2C0F49C1536A7C3009FF614 /* InfoPlist.strings */; };
+		A2C0F4A01536A7C3009FF614 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C0F49F1536A7C3009FF614 /* main.m */; };
+		A2C0F4A41536A7C3009FF614 /* HFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C0F4A31536A7C3009FF614 /* HFAppDelegate.m */; };
+		A2C0F4A71536A7C3009FF614 /* HFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C0F4A61536A7C3009FF614 /* HFViewController.m */; };
+		A2C0F4AA1536A7C3009FF614 /* HFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C0F4A81536A7C3009FF614 /* HFViewController_iPhone.xib */; };
+		A2C0F4AD1536A7C3009FF614 /* HFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C0F4AB1536A7C3009FF614 /* HFViewController_iPad.xib */; };
+		A2C0F4B51536A838009FF614 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0F4B41536A838009FF614 /* heart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2C0F48F1536A7C3009FF614 /* HeartFill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartFill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C0F4931536A7C3009FF614 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2C0F4951536A7C3009FF614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2C0F4971536A7C3009FF614 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2C0F49B1536A7C3009FF614 /* HeartFill-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeartFill-Info.plist"; sourceTree = "<group>"; };
+		A2C0F49D1536A7C3009FF614 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2C0F49F1536A7C3009FF614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2C0F4A11536A7C3009FF614 /* HeartFill-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeartFill-Prefix.pch"; sourceTree = "<group>"; };
+		A2C0F4A21536A7C3009FF614 /* HFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFAppDelegate.h; sourceTree = "<group>"; };
+		A2C0F4A31536A7C3009FF614 /* HFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFAppDelegate.m; sourceTree = "<group>"; };
+		A2C0F4A51536A7C3009FF614 /* HFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFViewController.h; sourceTree = "<group>"; };
+		A2C0F4A61536A7C3009FF614 /* HFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFViewController.m; sourceTree = "<group>"; };
+		A2C0F4A91536A7C3009FF614 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HFViewController_iPhone.xib; sourceTree = "<group>"; };
+		A2C0F4AC1536A7C3009FF614 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HFViewController_iPad.xib; sourceTree = "<group>"; };
+		A2C0F4B41536A838009FF614 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2C0F48C1536A7C3009FF614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C0F4941536A7C3009FF614 /* UIKit.framework in Frameworks */,
+				A2C0F4961536A7C3009FF614 /* Foundation.framework in Frameworks */,
+				A2C0F4981536A7C3009FF614 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2C0F4841536A7C3009FF614 = {
+			isa = PBXGroup;
+			children = (
+				A2C0F4B31536A824009FF614 /* Resources */,
+				A2C0F4991536A7C3009FF614 /* HeartFill */,
+				A2C0F4921536A7C3009FF614 /* Frameworks */,
+				A2C0F4901536A7C3009FF614 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2C0F4901536A7C3009FF614 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0F48F1536A7C3009FF614 /* HeartFill.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2C0F4921536A7C3009FF614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0F4931536A7C3009FF614 /* UIKit.framework */,
+				A2C0F4951536A7C3009FF614 /* Foundation.framework */,
+				A2C0F4971536A7C3009FF614 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2C0F4991536A7C3009FF614 /* HeartFill */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0F4A21536A7C3009FF614 /* HFAppDelegate.h */,
+				A2C0F4A31536A7C3009FF614 /* HFAppDelegate.m */,
+				A2C0F4A51536A7C3009FF614 /* HFViewController.h */,
+				A2C0F4A61536A7C3009FF614 /* HFViewController.m */,
+				A2C0F4A81536A7C3009FF614 /* HFViewController_iPhone.xib */,
+				A2C0F4AB1536A7C3009FF614 /* HFViewController_iPad.xib */,
+				A2C0F49A1536A7C3009FF614 /* Supporting Files */,
+			);
+			path = HeartFill;
+			sourceTree = "<group>";
+		};
+		A2C0F49A1536A7C3009FF614 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0F49B1536A7C3009FF614 /* HeartFill-Info.plist */,
+				A2C0F49C1536A7C3009FF614 /* InfoPlist.strings */,
+				A2C0F49F1536A7C3009FF614 /* main.m */,
+				A2C0F4A11536A7C3009FF614 /* HeartFill-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2C0F4B31536A824009FF614 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0F4B41536A838009FF614 /* heart.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2C0F48E1536A7C3009FF614 /* HeartFill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C0F4B01536A7C3009FF614 /* Build configuration list for PBXNativeTarget "HeartFill" */;
+			buildPhases = (
+				A2C0F48B1536A7C3009FF614 /* Sources */,
+				A2C0F48C1536A7C3009FF614 /* Frameworks */,
+				A2C0F48D1536A7C3009FF614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartFill;
+			productName = HeartFill;
+			productReference = A2C0F48F1536A7C3009FF614 /* HeartFill.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2C0F4861536A7C3009FF614 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HF;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Georgia Institue of Technology";
+			};
+			buildConfigurationList = A2C0F4891536A7C3009FF614 /* Build configuration list for PBXProject "HeartFill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2C0F4841536A7C3009FF614;
+			productRefGroup = A2C0F4901536A7C3009FF614 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2C0F48E1536A7C3009FF614 /* HeartFill */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2C0F48D1536A7C3009FF614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C0F49E1536A7C3009FF614 /* InfoPlist.strings in Resources */,
+				A2C0F4AA1536A7C3009FF614 /* HFViewController_iPhone.xib in Resources */,
+				A2C0F4AD1536A7C3009FF614 /* HFViewController_iPad.xib in Resources */,
+				A2C0F4B51536A838009FF614 /* heart.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2C0F48B1536A7C3009FF614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C0F4A01536A7C3009FF614 /* main.m in Sources */,
+				A2C0F4A41536A7C3009FF614 /* HFAppDelegate.m in Sources */,
+				A2C0F4A71536A7C3009FF614 /* HFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2C0F49C1536A7C3009FF614 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C0F49D1536A7C3009FF614 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2C0F4A81536A7C3009FF614 /* HFViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C0F4A91536A7C3009FF614 /* en */,
+			);
+			name = HFViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A2C0F4AB1536A7C3009FF614 /* HFViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C0F4AC1536A7C3009FF614 /* en */,
+			);
+			name = HFViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2C0F4AE1536A7C3009FF614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2C0F4AF1536A7C3009FF614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2C0F4B11536A7C3009FF614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeartFill/HeartFill-Prefix.pch";
+				INFOPLIST_FILE = "HeartFill/HeartFill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2C0F4B21536A7C3009FF614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeartFill/HeartFill-Prefix.pch";
+				INFOPLIST_FILE = "HeartFill/HeartFill-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2C0F4891536A7C3009FF614 /* Build configuration list for PBXProject "HeartFill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C0F4AE1536A7C3009FF614 /* Debug */,
+				A2C0F4AF1536A7C3009FF614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C0F4B01536A7C3009FF614 /* Build configuration list for PBXNativeTarget "HeartFill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2C0F4B11536A7C3009FF614 /* Debug */,
+				A2C0F4B21536A7C3009FF614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2C0F4861536A7C3009FF614 /* Project object */;
+}
