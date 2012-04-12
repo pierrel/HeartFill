@@ -7,6 +7,7 @@
 //
 
 #import "HFViewController.h"
+#import "FillView.h"
 
 @interface HFViewController ()
 
@@ -21,8 +22,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     if (!heart) {
-        heart = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"heart.png"]];
+        UIImage *heartImage = [UIImage imageNamed:@"heart.png"];
+        heart = [[UIImageView alloc] initWithImage:heartImage];
         [self.view addSubview:heart];
+        FillView *fill = [[FillView alloc] initWithFrame:self.view.frame 
+                                                andImage:heartImage];
+        [self.view addSubview:fill];
     }
 }
 

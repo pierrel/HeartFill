@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A24EF1031536AB3A00C0ED9E /* FillView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EF1021536AB3A00C0ED9E /* FillView.m */; };
+		A24EF1071536AD3100C0ED9E /* UIImage+WithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EF1061536AD3100C0ED9E /* UIImage+WithColor.m */; };
 		A2C0F4941536A7C3009FF614 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4931536A7C3009FF614 /* UIKit.framework */; };
 		A2C0F4961536A7C3009FF614 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4951536A7C3009FF614 /* Foundation.framework */; };
 		A2C0F4981536A7C3009FF614 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4971536A7C3009FF614 /* CoreGraphics.framework */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A24EF1011536AB3A00C0ED9E /* FillView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillView.h; sourceTree = "<group>"; };
+		A24EF1021536AB3A00C0ED9E /* FillView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillView.m; sourceTree = "<group>"; };
+		A24EF1051536AD3100C0ED9E /* UIImage+WithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WithColor.h"; sourceTree = "<group>"; };
+		A24EF1061536AD3100C0ED9E /* UIImage+WithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WithColor.m"; sourceTree = "<group>"; };
 		A2C0F48F1536A7C3009FF614 /* HeartFill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartFill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C0F4931536A7C3009FF614 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2C0F4951536A7C3009FF614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +95,10 @@
 				A2C0F4A81536A7C3009FF614 /* HFViewController_iPhone.xib */,
 				A2C0F4AB1536A7C3009FF614 /* HFViewController_iPad.xib */,
 				A2C0F49A1536A7C3009FF614 /* Supporting Files */,
+				A24EF1011536AB3A00C0ED9E /* FillView.h */,
+				A24EF1021536AB3A00C0ED9E /* FillView.m */,
+				A24EF1051536AD3100C0ED9E /* UIImage+WithColor.h */,
+				A24EF1061536AD3100C0ED9E /* UIImage+WithColor.m */,
 			);
 			path = HeartFill;
 			sourceTree = "<group>";
@@ -181,6 +191,8 @@
 				A2C0F4A01536A7C3009FF614 /* main.m in Sources */,
 				A2C0F4A41536A7C3009FF614 /* HFAppDelegate.m in Sources */,
 				A2C0F4A71536A7C3009FF614 /* HFViewController.m in Sources */,
+				A24EF1031536AB3A00C0ED9E /* FillView.m in Sources */,
+				A24EF1071536AD3100C0ED9E /* UIImage+WithColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,7 @@
 				A2C0F4B21536A7C3009FF614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
