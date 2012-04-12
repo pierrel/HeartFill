@@ -52,7 +52,7 @@
 	//Draw a rectangle	
     CGContextSetFillColorWithColor(context, color.CGColor);
     //Define a rectangle	
-    CGContextAddRect(context, CGRectMake(10.0, 150.0, 60.0, 120.0));	
+    CGContextAddRect(context, CGRectMake(150.0, 150.0, 60.0, 120.0));	
     //Draw it	
     CGContextFillPath(context);
 }

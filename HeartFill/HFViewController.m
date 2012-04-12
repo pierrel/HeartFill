@@ -23,11 +23,11 @@
     
     if (!heart) {
         UIImage *heartImage = [UIImage imageNamed:@"heart.png"];
-        heart = [[UIImageView alloc] initWithImage:heartImage];
-        [self.view addSubview:heart];
         FillView *fill = [[FillView alloc] initWithFrame:self.view.frame 
                                                 andImage:heartImage];
+        heart = [[UIImageView alloc] initWithImage:heartImage];
         [self.view addSubview:fill];
+        [self.view addSubview:heart];
     }
 }
 
