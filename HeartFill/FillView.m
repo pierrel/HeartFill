@@ -73,6 +73,8 @@
     CGContextFillRect(context, CGRectMake(0, rect.size.height/2, rect.size.width, rect.size.height/2));
     CGContextRestoreGState(context);
     CGImageRelease(alphaMask);
+    
+    [heart drawInRect:rect];
 }
 
 
