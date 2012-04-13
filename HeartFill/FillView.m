@@ -48,13 +48,27 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
+    UIImage *heart = [UIImage imageNamed:@"heart.png"];
+    UIImage *heartFilled = [UIImage imageNamed:@"heartFilled.png"];    
     CGContextRef context = UIGraphicsGetCurrentContext();
-	//Draw a rectangle	
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    //Define a rectangle	
-    CGContextAddRect(context, CGRectMake(150.0, 150.0, 60.0, 120.0));	
-    //Draw it	
-    CGContextFillPath(context);
+    
+    [[UIColor darkGrayColor] setFill];
+    [heartFilled drawInRect:rect];
+    CGContextSaveGState(context);
+    
+    CGImageRef alphaMask = CGBitmapContextCreateImage(context);
+    
+    [[UIColor whiteColor] setFill];
+    CGContextFillRect(context, rect);
+    
+    CGContextSaveGState(context);
+    CGContextClipToMask(context, rect, alphaMask);
+    
+    //[imageToFill drawInRect:rect];
+    [[UIColor redColor] setFill];
+    CGContextFillRect(context, CGRectMake(0, rect.size.height/2, rect.size.width, rect.size.height/2));
+    CGContextRestoreGState(context);
+    CGImageRelease(alphaMask);
 }
 
 

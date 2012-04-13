@@ -27,7 +27,7 @@
                                                 andImage:heartImage];
         heart = [[UIImageView alloc] initWithImage:heartImage];
         [self.view addSubview:fill];
-        [self.view addSubview:heart];
+        //[self.view addSubview:heart];
     }
 }
 

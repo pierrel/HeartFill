@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A23DA91E1537FBCF005CCDA1 /* heartFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DA91D1537FBCF005CCDA1 /* heartFilled.png */; };
 		A24EF1031536AB3A00C0ED9E /* FillView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EF1021536AB3A00C0ED9E /* FillView.m */; };
 		A24EF1071536AD3100C0ED9E /* UIImage+WithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EF1061536AD3100C0ED9E /* UIImage+WithColor.m */; };
 		A2C0F4941536A7C3009FF614 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C0F4931536A7C3009FF614 /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A23DA91D1537FBCF005CCDA1 /* heartFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartFilled.png; sourceTree = "<group>"; };
 		A24EF1011536AB3A00C0ED9E /* FillView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillView.h; sourceTree = "<group>"; };
 		A24EF1021536AB3A00C0ED9E /* FillView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillView.m; sourceTree = "<group>"; };
 		A24EF1051536AD3100C0ED9E /* UIImage+WithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WithColor.h"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		A2C0F4B31536A824009FF614 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A23DA91D1537FBCF005CCDA1 /* heartFilled.png */,
 				A2C0F4B41536A838009FF614 /* heart.png */,
 			);
 			name = Resources;
@@ -178,6 +181,7 @@
 				A2C0F4AA1536A7C3009FF614 /* HFViewController_iPhone.xib in Resources */,
 				A2C0F4AD1536A7C3009FF614 /* HFViewController_iPad.xib in Resources */,
 				A2C0F4B51536A838009FF614 /* heart.png in Resources */,
+				A23DA91E1537FBCF005CCDA1 /* heartFilled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
