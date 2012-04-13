@@ -53,9 +53,14 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     [[UIColor darkGrayColor] setFill];
-    [heartFilled drawInRect:rect];
-    CGContextSaveGState(context);
     
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 0, rect.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    [[UIColor whiteColor] setFill];
+    [heartFilled drawInRect:rect];
+    CGContextRestoreGState(context);
+        
     CGImageRef alphaMask = CGBitmapContextCreateImage(context);
     
     [[UIColor whiteColor] setFill];
@@ -64,7 +69,6 @@
     CGContextSaveGState(context);
     CGContextClipToMask(context, rect, alphaMask);
     
-    //[imageToFill drawInRect:rect];
     [[UIColor redColor] setFill];
     CGContextFillRect(context, CGRectMake(0, rect.size.height/2, rect.size.width, rect.size.height/2));
     CGContextRestoreGState(context);
