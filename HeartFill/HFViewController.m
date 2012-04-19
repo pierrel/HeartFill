@@ -27,7 +27,6 @@
         FillView *fill = [[FillView alloc] initWithFrame:fillRect
                                                withImage:heartImage 
                                           withPercentage:70];
-        [fill setBackgroundColor:[UIColor clearColor]];
         [self.view addSubview:fill];
     }
 }
