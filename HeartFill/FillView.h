@@ -12,12 +12,15 @@
 @interface FillView : UIView {
     UIImage *imageToFill;
     UIColor *color;
+    int percentage;
 }
 
 -(id)initWithFrame:(CGRect)frame andImage:(UIImage*)image;
+-(id)initWithFrame:(CGRect)frame withImage:(UIImage *)image withPercentage:(int)percentage;
 -(void)getImageColor;
 
 @property (nonatomic, retain) UIImage *imageToFill;
 @property (nonatomic, retain) UIColor *color;
+@property (nonatomic, assign) int percentage;
 
 @end

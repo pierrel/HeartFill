@@ -9,14 +9,21 @@
 #import "FillView.h"
 
 @implementation FillView
-@synthesize imageToFill, color;
+@synthesize imageToFill, color, percentage;
 
 - (id)initWithFrame:(CGRect)frame andImage:(UIImage*)image {
     if (self = [self initWithFrame:frame]) {
+        self.percentage = 0;
         self.imageToFill = image;
-        [self getImageColor];
     }
     
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame withImage:(UIImage *)image withPercentage:(int)thePercentage {
+    if (self = [self initWithFrame:frame andImage:image]) {
+        self.percentage = thePercentage;
+    }
     return self;
 }
 
@@ -29,23 +36,6 @@
     return self;
 }
 
--(void)getImageColor {
-    NSMutableArray *colors = [NSMutableArray array];
-    if (self.imageToFill) {
-        NSInteger minDim = MIN(self.imageToFill.size.width, self.imageToFill.size.height);
-        for (int i = 0, len = minDim; i < len; i++) {
-            UIColor *tColor = [self.imageToFill getPixelColorAtLocation:CGPointMake(i, i)];
-            if (![colors containsObject:tColor]) {
-                [colors addObject:tColor];
-            }
-        }
-    }
-    color = [colors objectAtIndex:1]; // just grabbing the second assuming the first is blank
-}
-
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     UIImage *heart = [UIImage imageNamed:@"heart.png"];
@@ -70,7 +60,7 @@
     CGContextClipToMask(context, rect, alphaMask);
     
     [[UIColor redColor] setFill];
-    CGContextFillRect(context, CGRectMake(0, rect.size.height/2, rect.size.width, rect.size.height/2));
+    CGContextFillRect(context, CGRectMake(0, rect.size.height - (rect.size.height * (percentage/100.0)), rect.size.width, rect.size.height));
     CGContextRestoreGState(context);
     CGImageRelease(alphaMask);
     

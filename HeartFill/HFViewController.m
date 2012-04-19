@@ -24,10 +24,9 @@
     if (!heart) {
         UIImage *heartImage = [UIImage imageNamed:@"heart.png"];
         FillView *fill = [[FillView alloc] initWithFrame:self.view.frame 
-                                                andImage:heartImage];
-        heart = [[UIImageView alloc] initWithImage:heartImage];
+                                               withImage:heartImage 
+                                          withPercentage:90];
         [self.view addSubview:fill];
-        //[self.view addSubview:heart];
     }
 }
 
