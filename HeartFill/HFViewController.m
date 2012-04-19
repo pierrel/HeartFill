@@ -23,9 +23,11 @@
     
     if (!heart) {
         UIImage *heartImage = [UIImage imageNamed:@"heart.png"];
-        FillView *fill = [[FillView alloc] initWithFrame:self.view.frame 
+        CGRect fillRect = CGRectMake(50, 50, 200, 200);
+        FillView *fill = [[FillView alloc] initWithFrame:fillRect
                                                withImage:heartImage 
-                                          withPercentage:90];
+                                          withPercentage:70];
+        [fill setBackgroundColor:[UIColor clearColor]];
         [self.view addSubview:fill];
     }
 }

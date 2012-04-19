@@ -42,19 +42,18 @@
     UIImage *heartFilled = [UIImage imageNamed:@"heartFilled.png"];    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    [[UIColor darkGrayColor] setFill];
+    [[UIColor clearColor] setFill];
     
     CGContextSaveGState(context);
     CGContextTranslateCTM(context, 0, rect.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
-    [[UIColor whiteColor] setFill];
+    [[UIColor clearColor] setFill];
     [heartFilled drawInRect:rect];
     CGContextRestoreGState(context);
         
     CGImageRef alphaMask = CGBitmapContextCreateImage(context);
     
-    [[UIColor whiteColor] setFill];
-    CGContextFillRect(context, rect);
+    CGContextClearRect(context, rect);
     
     CGContextSaveGState(context);
     CGContextClipToMask(context, rect, alphaMask);
